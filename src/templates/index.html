@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Atrações Turísticas</title>
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="main.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="tourist-container">
+                <h1 class="tourist-container-title" data-test="title-form">
+                    Adicionar um Ponto Turístico
+                </h1>
+                <form class="tourist-form">
+                    <div class="tourist-form-image">
+                        <label
+                            for="tourist-form-image-input"
+                            class="tourist-form-image-label"
+                            data-test="input-image"
+                        >
+                            Imagem
+                        </label>
+                        <input
+                            id="tourist-form-image-input"
+                            class="tourist-form-image-input"
+                            type="file"
+                            accept="image/*"
+                            required
+                        />
+                    </div>
+
+                    <div class="tourist-form-text-inputs">
+                        <input
+                            class="tourist-form-text-input-title"
+                            type="text"
+                            placeholder="Título"
+                            required
+                            data-test="input-titulo"
+                        />
+                        <textarea
+                            class="tourist-form-text-input-description"
+                            rows="5"
+                            placeholder="Descrição"
+                            required
+                            data-test="input-descrição"
+                        ></textarea>
+                        <button
+                            data-test="button-submit"
+                            class="tourist-form-button-submit"
+                            type="submit"
+                        >
+                            Adicionar
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="tourist-attractions">
+                <h2 class="tourist-attractions-title" data-test="title-list">Pontos Turísticos</h2>
+
+                <div class="tourist-attractions-slick" data-test="container-item-list"></div>
+            </section>
+        </main>
+        <script src="bundle.js"></script>
+    </body>
+</html>

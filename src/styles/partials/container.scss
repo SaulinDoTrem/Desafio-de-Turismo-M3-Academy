@@ -1,0 +1,44 @@
+.tourist-container {
+    padding-top: 40px;
+}
+
+.tourist-attractions-title,
+.tourist-container-title {
+    color: $black;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    padding-left: 130px;
+}
+
+.tourist-attractions {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 168px;
+}
+
+@media screen and (min-width: 2500px) {
+    .tourist-container-title,
+    .tourist-attractions-title {
+        font-size: 64px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .tourist-container {
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &-title {
+            padding-left: 0;
+        }
+    }
+
+    .tourist-attractions {
+        margin-bottom: 117px;
+
+        &-title {
+            padding-left: 16px;
+        }
+    }
+}

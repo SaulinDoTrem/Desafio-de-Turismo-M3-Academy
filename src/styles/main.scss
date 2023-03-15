@@ -1,0 +1,11 @@
+// variables
+@import "utils/variables.scss";
+
+// reset and global
+@import "common/reset.scss";
+@import "common/global.scss";
+
+// partials
+@import "partials/form.scss";
+@import "partials/container.scss";
+@import "partials/slick-list.scss";
